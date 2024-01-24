@@ -1,0 +1,14 @@
+[2023-12-12T09:21:48.260+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_bipo_dag.get_access_token scheduled__2023-01-28T00:00:00+00:00 [queued]>
+[2023-12-12T09:21:48.276+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_bipo_dag.get_access_token scheduled__2023-01-28T00:00:00+00:00 [queued]>
+[2023-12-12T09:21:48.277+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-12T09:21:48.300+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_access_token> on 2023-01-28 00:00:00+00:00
+[2023-12-12T09:21:48.307+0000] {standard_task_runner.py:57} INFO - Started process 3881 to run task
+[2023-12-12T09:21:48.311+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'my_bipo_dag', 'get_access_token', 'scheduled__2023-01-28T00:00:00+00:00', '--job-id', '230', '--raw', '--subdir', 'DAGS_FOLDER/bipo_employee_info.py', '--cfg-path', '/tmp/tmpavbakytx']
+[2023-12-12T09:21:48.314+0000] {standard_task_runner.py:85} INFO - Job 230: Subtask get_access_token
+[2023-12-12T09:21:48.337+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2023-12-12T09:21:48.390+0000] {task_command.py:416} INFO - Running <TaskInstance: my_bipo_dag.get_access_token scheduled__2023-01-28T00:00:00+00:00 [running]> on host e1a26a98da8f
+[2023-12-12T09:21:48.528+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_bipo_dag' AIRFLOW_CTX_TASK_ID='get_access_token' AIRFLOW_CTX_EXECUTION_DATE='2023-01-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-28T00:00:00+00:00'
+[2023-12-12T09:21:48.841+0000] {python.py:194} INFO - Done. Returned value was: rZUW54O6epM9o-ozdGuiVxuGFYMoBZOgT5ZuazgJ_rUFxLlM3fqvTyTC0fx6Bj-MnOBJDlt3ixLHY5tGs5RAJD9e-nm-bwPj2-CXitJeyMhtEulr5Mq95t557jLolbwLzjMCVrznw33VYyeLjsG0D7BatDtQukKrVXzrcdnTqkPgaHBr1x7up0tAi_XseK01HgFH8zLEUoDsBB5m8dwztWqN2i-l5eBE87ch_SYoSHPsiFkj3tTv23PEKbteTnWPiqhQUBUM9Feo6MDPnhRfqCf663Q5KKRc_UGsmcYNgU8cXHFrIXqCENTqTPhqpAmzXy8vANqLRA_l-VPGmraBjw
+[2023-12-12T09:21:48.892+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=my_bipo_dag, task_id=get_access_token, execution_date=20230128T000000, start_date=20231212T092148, end_date=20231212T092148
+[2023-12-12T09:21:48.925+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-12T09:21:48.960+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
